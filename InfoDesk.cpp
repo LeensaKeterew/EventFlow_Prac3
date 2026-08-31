@@ -14,7 +14,7 @@
         active_=false;
         std::cout<<" "<<name_<<" (InfoDesk): CLOSED.\n";
     }
-    void InfoDesk::reportStatud() const {
+    void InfoDesk::reportStatus() const {
                 std::cout<<" - InfoDesk '"<<name_<<":"<<(active_ ? "open":"closed")<<", announcement=\""<<announcement_<<"\"\n";
     }
     void InfoDesk::update(const Notice& notice){
