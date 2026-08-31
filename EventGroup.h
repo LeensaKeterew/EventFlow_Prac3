@@ -6,7 +6,7 @@
 
 class EventGroup : public EventComponent {
     private:
-        bool open;
+        bool open_;
         std::vector<EventComponent*> children; 
 
     public: 
