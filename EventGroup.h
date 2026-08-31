@@ -20,6 +20,6 @@ class EventGroup : public EventComponent {
         void add(EventComponent* child); 
         EventComponent* remove(EventComponent* child); 
 
-};
+}; 
 
 #endif
