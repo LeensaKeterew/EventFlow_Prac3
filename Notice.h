@@ -37,7 +37,7 @@ class Notice {
     private:
         NoticeType type_;
         std::string message_;
-        int value;
+        int value_;
 };
 
 #endif
