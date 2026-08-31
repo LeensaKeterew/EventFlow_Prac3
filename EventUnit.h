@@ -2,10 +2,10 @@
 #define EVENTUNIT_H
 
 #include "EventComponent.h"
-//#include "Observer.h"
+#include "Observer.h"
 
-/**
- * @brief The GoF "Leaf" role for the Composite pattern.
+/*
+ * The GoF "Leaf" role for the Composite pattern.
  * 
  * EventUnit is a single operational unit that cannot contain other components
  * (a stage, a booth, a gate, and so on). It is also an Observer because in this design
@@ -16,27 +16,23 @@
  * let the object decide itself 
  */
 
-class EventUnit : public EventComponent { // , public Observer
+class EventUnit : public EventComponent, public Observer { 
     protected:
-        int capacity;
-        bool active; 
+        int capacity_;
+        bool active_; 
 
     public: 
-        /**
-         * @brief Builds a leaf unit.
-         * @param name Display name, e.g. "Main Stage".
-         * @param capacity How many people this unit can hold/serve at once.
-         */
-        EventUnit(const std::string& name, int capacity) : EventComponent(name), capacity(capacity), active(false) {}
+        // Builds a leaf unit with a name and capacity.
+        EventUnit(const std::string& name, int capacity) : EventComponent(name), capacity_(capacity), active_(false) {}
         ~EventUnit() override{}
 
         int getCapacity() const override{
-            return capacity; 
+            return capacity_; 
         }
 
-        //// @return true while this unit is open/active
+        //true while this unit is open/active
         bool isActive() const{
-            return active; 
+            return active_; 
         }
         
 };

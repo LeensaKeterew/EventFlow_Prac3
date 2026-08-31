@@ -5,7 +5,7 @@
 #include "Observer.h"
 
 /**
- * @brief The GoF "Subject" role.
+ * The GoF "Subject" role.
  * 
  * A Subject keeps a list of Observers and can notify all of them at once 
  * when something happens. The Subject does NOT own its Observers- 
@@ -13,6 +13,8 @@
  * Composite ownership tree, or on the stack/heap in main).
  * That is why the destructor below only clears the list instead of deleting anything
  */
+class Notice;
+
 class Subject
 {
 protected:
@@ -53,3 +55,4 @@ public:
     virtual void notify(const Notice& notice);
 };
 
+#endif

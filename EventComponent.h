@@ -5,10 +5,10 @@
 
 class EventComponent{
     protected:
-        std::string name;
+        std::string name_;
 
     public: 
-        EventComponent(const std::string& name) : name(name) {}
+        EventComponent(const std::string& name) : name_(name) {}
         virtual ~EventComponent(){};
         virtual void open() = 0;
         virtual void close() = 0;
@@ -19,7 +19,7 @@ class EventComponent{
             return 0; 
         }
         const std::string& getName() const {
-            return name;
+            return name_;
         }
 
 };
