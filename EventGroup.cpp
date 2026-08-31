@@ -8,12 +8,12 @@ EventGroup::EventGroup(const std::string& name) : EventComponent(name), open_(fa
 EventGroup::~EventGroup() {
     std::vector<EventComponent*>::iterator it;
 
-    for(it=children.begin(); it !=children.end(); ++it){
+    for(it=children_.begin(); it !=children_.end(); ++it){
         delete *it;
     }
 
-    children.clear();
-    std::cout << " [destroy] EventGroup '" << name << "' and its owned subtree released.\n";
+    children_.clear();
+    std::cout << " [destroy] EventGroup '" << name_ << "' and its owned subtree released.\n";
 }
 
 void EventGroup::open() {
@@ -21,7 +21,7 @@ void EventGroup::open() {
 
     std::vector<EventComponent*>::iterator it;
 
-    for(it=children.begin(); it !=children.end(); ++it){
+    for(it=children_.begin(); it !=children_.end(); ++it){
         (*it)->open();
     }
 }
@@ -31,13 +31,25 @@ void EventGroup::close() {
 
     std::vector<EventComponent*>::iterator it;
 
-    for(it=children.begin(); it !=children.end(); ++it){
+    for(it=children_.begin(); it !=children_.end(); ++it){
         (*it)->close();
     }
 }
 
-void EventGroup::reportStatus() const {
+void EventGroup::printOwnHeader() const{
+    int total = getCapacity();
 
+    std::cout << name_ << " (" << (open? "open" : "closed") << ", total capacity:" << total << ")\n";
+}
+
+void EventGroup::reportStatus() const {
+    printOwnHeader();
+
+    std::vector<EventComponent*>::const_iterator it;
+
+    for(it=children_.begin(); it !=children_.end(); ++it){
+        (*it)->reportStatus();
+    }
 }
 
 int EventGroup::getCapacity() const {
@@ -45,7 +57,7 @@ int EventGroup::getCapacity() const {
 
     std::vector<EventComponent*>::const_iterator it;
 
-    for(it=children.begin(); it !=children.end(); ++it){
+    for(it=children_.begin(); it !=children_.end(); ++it){
         total += (*it)->getCapacity();
     }
 
@@ -57,7 +69,7 @@ int EventGroup::getActiveStaffCount() const {
 
     std::vector<EventComponent*>::const_iterator it;
 
-    for(it=children.begin(); it !=children.end(); ++it){
+    for(it=children_.begin(); it !=children_.end(); ++it){
         total += (*it)->getActiveStaffCount();
     }
 
@@ -65,22 +77,36 @@ int EventGroup::getActiveStaffCount() const {
 } 
 
 void EventGroup::add(EventComponent* child){
+    if(child == NULL){
+        return;
+    }
+    children_.push_back(child); 
 
+    Observer* observerChild = dynamic_cast<Observer*>(child); 
+    if(observerChild != NULL){
+        attach(observerChild);
+    }
 } 
 
 EventComponent* EventGroup::remove(EventComponent* child){
-    auto it = std::find(children.begin(), children.end(), child);
+    auto it = std::find(children_.begin(), children_.end(), child);
 
-    if(it == children.end()){
+    if(it == children_.end()){
         return NULL; 
     }
+    children_.erase(it);
+    
+    Observer* observerChild = dynamic_cast<Observer*>(child); 
+    if(observerChild != NULL){
+        detach(observerChild);
+    }
 
-    children.erase(it); 
-
-
+    return child;
 } 
 
 void EventGroup::update(const Notice&notice){
+    std::cout << " " << name_ << " (EventGroup) received" << noticeTypeToString(notice.getType()) << " - cascading to " << observers_.size() << " observer(s) below.\n";
 
+    notify(notice); 
 }
 
