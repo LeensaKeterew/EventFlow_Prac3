@@ -3,6 +3,13 @@
 
 #include "EventUnit.h"
 
+/**
+ * @brief A concrete Leaf: a help/information desk.
+ * 
+ * An InfoDesk keeps handing out information through almost everythin-
+ * it only truly closes on EVACUATE. On a SCHEDULE_CHANGE it updates the
+ * announcement it is displaying to visitors.
+ */
 
 class InfoDesk:public EventUnit{
     public:
@@ -10,7 +17,7 @@ class InfoDesk:public EventUnit{
     ~InfoDesk() override;
     void open() override;
     void close() override;
-    void reportStatud() const override;
+    void reportStatus() const override;
     void update(const Notice& notice) override;
 
     private:
