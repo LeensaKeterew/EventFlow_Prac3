@@ -3,12 +3,15 @@
 
 #include <vector>
 #include "EventComponent.h"
+#include "Observer.h"
+#include "Subject.h"
 
-class EventGroup : public EventComponent {
+class EventGroup : public EventComponent, public Observer, public Subject {
     private:
         bool open_;
         std::vector<EventComponent*> children_; 
 
+        void printOwnHeader() const;
     public: 
         EventGroup(const std::string& name); 
         ~EventGroup() override;
@@ -19,7 +22,7 @@ class EventGroup : public EventComponent {
         int getActiveStaffCount() const override; 
         void add(EventComponent* child); 
         EventComponent* remove(EventComponent* child); 
-
+        void update(const Notice&notice) override; 
 }; 
 
 #endif
