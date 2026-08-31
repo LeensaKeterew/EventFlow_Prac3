@@ -35,6 +35,6 @@ class Stage: public EventUnit{
     bool paused_;
     std::vector<std::string> lineup_;
     std::size_t currentActIndex_;
-}
+};
 
 #endif

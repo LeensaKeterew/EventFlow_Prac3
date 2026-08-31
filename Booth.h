@@ -13,13 +13,13 @@
 
 class Booth : public EventUnit, public Subject {
     public:
-        Booth(const std:string &name, int capacity , int queueThreshold);
+        Booth(const std::string &name, int capacity , int queueThreshold);
         ~Booth() override;
 
         void open() override;
         void close() override;
         void reportStatus() const override;
-        void update(const Notice & notice) override;
+        void update(const Notice& notice) override;
 
         void addToQueue(int people); //using this to stimulate people joining the queue which is for testing
 

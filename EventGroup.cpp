@@ -1,4 +1,5 @@
 #include "EventGroup.h"
+#include "Notice.h"
 #include <iostream>
 #include <algorithm>
 
@@ -78,4 +79,8 @@ EventComponent* EventGroup::remove(EventComponent* child){
 
 
 } 
+
+void EventGroup::update(const Notice&notice){
+
+}
 

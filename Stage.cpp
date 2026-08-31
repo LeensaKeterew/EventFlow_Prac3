@@ -2,7 +2,7 @@
 #include "Notice.h"
 #include <iostream>
 
-    Stage::Stage(const std::string& name, int capacity, bool isIndoor):EventUnit(name,capacity),isIndoor_(isIndoor),paused(false),currentActIndex_(0){}
+    Stage::Stage(const std::string& name, int capacity, bool isIndoor):EventUnit(name,capacity),isIndoor_(isIndoor),paused_(false),currentActIndex_(0){}
     
     Stage::~Stage(){
         std::cout<<" [destroy] Stage '"<<name_<<"' released.\n";
@@ -19,7 +19,7 @@
         std::cout<<" "<<name_<< " (Stage): CLOSED for the day.\n";
     }
     void Stage::reportStatus() const{
-        std::cout<<" - Stage '"<<name_<<"': "<<(active_? ("open but PAUSED" : "open and running"):"closed")<<",indoor="<<(isIndoor_? "yes":"no")<<", capacity="<<capacity_<<"\n";
+        std::cout<<" - Stage '"<<name_<<"': "<<(active_? ( paused_ ?"open but PAUSED" : "open and running"):"closed")<<",indoor="<<(isIndoor_? "yes":"no")<<", capacity="<<capacity_<<"\n";
     }
 
     void Stage::update(const Notice& notice){
@@ -28,7 +28,7 @@
                 open();
                 break;
             case NoticeType::CLOSE:
-                close()
+                close();
                 break;
             case NoticeType::PAUSE:
                 paused_=true;
