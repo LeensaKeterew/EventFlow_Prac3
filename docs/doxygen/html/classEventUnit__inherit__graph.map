@@ -1,0 +1,17 @@
+<map id="EventUnit" name="EventUnit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="349,282,464,444"/>
+<area shape="rect" id="Node000004" href="$classBooth.html" title=" " alt="" coords="5,503,143,754"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="333,390,246,432,199,460,157,494,145,506,141,503,154,490,196,456,243,427,337,386"/>
+<area shape="rect" id="Node000005" href="$classInfoDesk.html" title="A concrete Leaf: a help/information desk." alt="" coords="168,536,298,720"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="342,447,313,493,285,538,281,535,308,490,338,451"/>
+<area shape="rect" id="Node000006" href="$classStaffTeam.html" title=" " alt="" coords="323,525,490,732"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="408,456,409,527,404,524,405,460"/>
+<area shape="rect" id="Node000007" href="$classStage.html" title="A concrete Leaf: a performance stage." alt="" coords="514,492,651,765"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="473,447,505,490,517,510,511,509,500,493,472,452"/>
+<area shape="rect" id="Node000008" href="$classVendor.html" title="A concrete Leaf: a food/drink vendor." alt="" coords="674,525,816,732"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="478,385,572,427,620,455,664,490,694,526,689,525,661,494,617,460,570,431,478,390"/>
+<area shape="rect" id="Node000002" href="$classEventComponent.html" title=" " alt="" coords="243,5,410,234"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="369,245,383,283,377,282,368,251"/>
+<area shape="rect" id="Node000003" href="$classObserver.html" title="The GoF &quot;Observer&quot; role." alt="" coords="434,72,541,167"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="469,179,436,283,431,281,466,183"/>
+</map>

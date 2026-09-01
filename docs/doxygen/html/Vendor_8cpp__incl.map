@@ -1,0 +1,18 @@
+<map id="Vendor.cpp" name="Vendor.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="248,5,340,33"/>
+<area shape="rect" id="Node000002" href="$Vendor_8h.html" title=" " alt="" coords="171,81,249,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,35,238,73,234,69,281,32"/>
+<area shape="rect" id="Node000007" href="$Notice_8h.html" title=" " alt="" coords="266,157,341,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="296,31,304,142,299,140,293,35"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="332,81,411,109"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="308,31,349,70,344,70,308,36"/>
+<area shape="rect" id="Node000003" href="$EventUnit_8h.html" title=" " alt="" coords="144,157,241,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="208,107,202,143,197,140,206,111"/>
+<area shape="rect" id="Node000004" href="$EventComponent_8h.html" title=" " alt="" coords="5,232,151,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="170,187,113,226,110,222,174,183"/>
+<area shape="rect" id="Node000006" href="$Observer_8h.html" title=" " alt="" coords="175,232,266,260"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="199,182,213,218,208,217,197,187"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="161,308,219,336"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="99,258,160,299,155,300,97,263"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="304,183,298,221,291,242,280,262,258,285,232,303,230,298,255,281,276,258,286,240,293,220,301,187"/>
+</map>
