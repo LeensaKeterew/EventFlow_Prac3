@@ -2,9 +2,9 @@
 #define NOTICE_H
 #include <string>
 
-//This manages the different kinds of announcements that EventControl can send out in the notification
-//EventUnit decides for itself how it reacts to each one and the Subject does not know or care what the reaction will be.
-
+/** @brief This manages the different kinds of announcements that EventControl can send out in the notification
+ * @details EventUnit decides for itself how it reacts to each one and the Subject does not know or care what the reaction will be.
+ */
 enum class NoticeType {
     OPEN,
     CLOSE,
@@ -18,13 +18,13 @@ enum class NoticeType {
 };
 
 
-//basically used for the demo where it turns a NoticeType into readable word.
+/** @brief basically used for the demo where it turns a NoticeType into readable word. */
 std::string noticeTypeToString(NoticeType type);
 
 
-//the class is a single notice/order that travels from a Subject to its Observers
-
-//Basically we use the "push" style of Observers: the Subject fills in this object with everything an Observer could need and hands it straight to update. The Observer never has to call back into the Subject to ask "what happened" as it already knows.
+/** @brief the class is a single notice/order that travels from a Subject to its Observers
+ * @details Basically we use the "push" style of Observers: the Subject fills in this object with everything an Observer could need and hands it straight to update. The Observer never has to call back into the Subject to ask "what happened" as it already knows.
+ */
 
 class Notice {
     public:

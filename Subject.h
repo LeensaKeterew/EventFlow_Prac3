@@ -5,7 +5,7 @@
 #include "Observer.h"
 
 /**
- * The GoF "Subject" role.
+ * @brief The GoF "Subject" role.
  * 
  * A Subject keeps a list of Observers and can notify all of them at once 
  * when something happens. The Subject does NOT own its Observers- 
