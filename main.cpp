@@ -1,3 +1,9 @@
+/**
+ * @file main.cpp
+ * @brief Demo driver for TechWave Expo
+ * 
+ * Only ever talks to objects through the EventComponent, Observer, EventControl and SUbject. 
+ */
 #include <iostream>
 #include "EventControl.h"
 #include "EventGroup.h"

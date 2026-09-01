@@ -3,6 +3,7 @@
 #include <string>
 
 /** @brief This manages the different kinds of announcements that EventControl can send out in the notification
+ * 
  * @details EventUnit decides for itself how it reacts to each one and the Subject does not know or care what the reaction will be.
  */
 enum class NoticeType {

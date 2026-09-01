@@ -8,6 +8,7 @@
 
 /**
  * @brief The event's central control room
+ * 
  * EventControl is a ConcreteSubject and it represents the people running the event. Now we chose to keep it OUTSIDE the Composite tree entirely because it does not have a capacity or open/closed state of it own; it only issues notices to whichever top-level EventGroups have registered with it. Our other original feature is where EventControl keeps a simple text log og every runtime reorganisation(unit transferes between groups), so  we can see the history of what happened during the event. 
  */
 

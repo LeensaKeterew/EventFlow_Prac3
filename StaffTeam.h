@@ -4,6 +4,7 @@
 #include "EventUnit.h"
 
 /** @brief A concrete leaf, a staff team(security, medical and others).
+ * 
  * @details Idea is from the specification where a staff team stays operational during an alert that pauses stages and suspends vendors. On EVACUATE it does the opposite of everyone else instead of closing and then switches into "emergency mode" and becomes more active. 
  */
 
