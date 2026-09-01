@@ -4,6 +4,6 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,245,173,282,168,283,153,250"/>
 <area shape="rect" id="Node000003" href="$classObserver.html" title="The GoF &quot;Observer&quot; role." alt="" coords="197,72,304,167"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,180,253,283,248,282,249,185"/>
-<area shape="rect" id="Node000004" href="$classSubject.html" title=" " alt="" coords="328,50,426,189"/>
+<area shape="rect" id="Node000004" href="$classSubject.html" title="The GoF &quot;Subject&quot; role." alt="" coords="328,50,426,189"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="346,201,315,283,311,281,343,205"/>
 </map>

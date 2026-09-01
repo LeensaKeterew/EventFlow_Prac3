@@ -4,6 +4,7 @@
 #include <vector>
 #include "Observer.h"
 
+class Notice;
 /**
  * @brief The GoF "Subject" role.
  * 
@@ -13,7 +14,7 @@
  * Composite ownership tree, or on the stack/heap in main).
  * That is why the destructor below only clears the list instead of deleting anything
  */
-class Notice;
+
 
 class Subject
 {

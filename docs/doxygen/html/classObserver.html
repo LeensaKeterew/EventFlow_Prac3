@@ -132,12 +132,12 @@ Collaboration diagram for Observer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afcc6b67be6c386f2f3d2c363aa59cb47" id="r_afcc6b67be6c386f2f3d2c363aa59cb47"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcc6b67be6c386f2f3d2c363aa59cb47">~Observer</a> ()</td></tr>
 <tr class="memitem:a1facbbd0e34f6034d183ae9bcabbf1b0" id="r_a1facbbd0e34f6034d183ae9bcabbf1b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1facbbd0e34f6034d183ae9bcabbf1b0">update</a> (const <a class="el" href="classNotice.html">Notice</a> &amp;notice)=0</td></tr>
-<tr class="memdesc:a1facbbd0e34f6034d183ae9bcabbf1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a <a class="el" href="classSubject.html">Subject</a> when something has changed.  <br /></td></tr>
+<tr class="memdesc:a1facbbd0e34f6034d183ae9bcabbf1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by a <a class="el" href="classSubject.html" title="The GoF &quot;Subject&quot; role.">Subject</a> when something has changed.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The GoF "Observer" role. </p>
-<p>Anything that wants to be told about notices (weather alerts, capacity warnings, and so on) implements this interface. The <a class="el" href="classSubject.html">Subject</a> that is being watched does not need to know what kind of object the <a class="el" href="classObserver.html" title="The GoF &quot;Observer&quot; role.">Observer</a> really is- it only calls <a class="el" href="#a1facbbd0e34f6034d183ae9bcabbf1b0" title="Called by a Subject when something has changed.">update()</a>.</p>
-<p>We use "push": the <a class="el" href="classSubject.html">Subject</a> passes everything the <a class="el" href="classObserver.html" title="The GoF &quot;Observer&quot; role.">Observer</a> needs inside the <a class="el" href="classNotice.html">Notice</a> object, so the <a class="el" href="classObserver.html" title="The GoF &quot;Observer&quot; role.">Observer</a> never has to call back into the <a class="el" href="classSubject.html">Subject</a> to ask for more information </p>
+<p>Anything that wants to be told about notices (weather alerts, capacity warnings, and so on) implements this interface. The <a class="el" href="classSubject.html" title="The GoF &quot;Subject&quot; role.">Subject</a> that is being watched does not need to know what kind of object the <a class="el" href="classObserver.html" title="The GoF &quot;Observer&quot; role.">Observer</a> really is- it only calls <a class="el" href="#a1facbbd0e34f6034d183ae9bcabbf1b0" title="Called by a Subject when something has changed.">update()</a>.</p>
+<p>We use "push": the <a class="el" href="classSubject.html" title="The GoF &quot;Subject&quot; role.">Subject</a> passes everything the <a class="el" href="classObserver.html" title="The GoF &quot;Observer&quot; role.">Observer</a> needs inside the <a class="el" href="classNotice.html">Notice</a> object, so the <a class="el" href="classObserver.html" title="The GoF &quot;Observer&quot; role.">Observer</a> never has to call back into the <a class="el" href="classSubject.html" title="The GoF &quot;Subject&quot; role.">Subject</a> to ask for more information </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afcc6b67be6c386f2f3d2c363aa59cb47" name="afcc6b67be6c386f2f3d2c363aa59cb47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afcc6b67be6c386f2f3d2c363aa59cb47">&#9670;&#160;</a></span>~Observer()</h2>
@@ -188,7 +188,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called by a <a class="el" href="classSubject.html">Subject</a> when something has changed. </p>
+<p>Called by a <a class="el" href="classSubject.html" title="The GoF &quot;Subject&quot; role.">Subject</a> when something has changed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">notice</td><td>The notice describing what happened. The <a class="el" href="classObserver.html" title="The GoF &quot;Observer&quot; role.">Observer</a> decides for itself, based on its own type and state, how (or whether) to react. </td></tr>

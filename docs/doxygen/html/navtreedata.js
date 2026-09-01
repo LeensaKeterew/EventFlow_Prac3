@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "EventFlow - Techwave Expo", "index.html", [
+    [ "EventFlow_Prac3", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

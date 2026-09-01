@@ -17,7 +17,7 @@
 <area shape="rect" id="Node000002" href="$classObserver.html" title="The GoF &quot;Observer&quot; role." alt="" coords="32,57,112,85"/>
 <area shape="poly" id="edge8_Node000002_Node000001" title=" " alt="" coords="127,69,189,70,184,73,128,74"/>
 <area shape="poly" id="edge9_Node000002_Node000003" title=" " alt="" coords="127,86,195,108,190,111,127,91"/>
-<area shape="rect" id="Node000005" href="$classSubject.html" title=" " alt="" coords="37,5,107,33"/>
+<area shape="rect" id="Node000005" href="$classSubject.html" title="The GoF &quot;Subject&quot; role." alt="" coords="37,5,107,33"/>
 <area shape="poly" id="edge11_Node000005_Node000001" title=" " alt="" coords="121,32,192,55,187,58,122,37"/>
 <area shape="poly" id="edge10_Node000005_Node000004" title=" " alt="" coords="122,17,346,17,344,21,123,22"/>
 </map>
