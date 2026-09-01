@@ -37,6 +37,7 @@
             case NoticeType::RESUME:
                 paused_=false;
                 std::cout<<name_<<" (Stage): performance RESUMED.\n ";
+                break;
             case NoticeType::WEATHER_ALERT:
             //Event rule: onlt an outdoor stage reacts to weather
                 if (!isIndoor_){

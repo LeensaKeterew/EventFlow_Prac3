@@ -39,7 +39,7 @@ void EventGroup::close() {
 void EventGroup::printOwnHeader() const{
     int total = getCapacity();
 
-    std::cout << name_ << " (" << (open? "open" : "closed") << ", total capacity:" << total << ")\n";
+    std::cout << name_ << " (" << (open_? "open" : "closed") << ", total capacity:" << total << ")\n";
 }
 
 void EventGroup::reportStatus() const {
