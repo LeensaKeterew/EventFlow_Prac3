@@ -29,8 +29,8 @@
             std::cout<<" "<<name_<<"(InfoDesk): directing everyone to exits, then closing.\n";
             break;
         default:
-            //Event rule:the info desk stays operational through weather/capacity/pause notices
-            //unlike a stage or booth, because visitors still need directions during those events
+            /*Event rule:the info desk stays operational through weather/capacity/pause notices
+            unlike a stage or booth, because visitors still need directions during those events*/
             std::cout<<" "<<name_<<" (InfoDesk): staying open for visitors.\n";
             break; 
     }

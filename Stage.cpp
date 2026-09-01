@@ -52,9 +52,9 @@
                 std::cout <<" "<<name_<<" (Stage): EVACUATING - show stopped immediately.\n";
                 break;
             case NoticeType::SCHEDULE_CHANGE:
-                //Task 4.4: Lineup rotation. A generic event-wide SCHEDULE_CHANGE
-                //notice makes each Stage advance through its OWN lineup_ independently
-                //this stage does not know or care about what any other stage's lineup looks like
+                /*Task 4.4: Lineup rotation. A generic event-wide SCHEDULE_CHANGE
+                notice makes each Stage advance through its OWN lineup_ independently
+                this stage does not know or care about what any other stage's lineup looks like*/
                 if (currentActIndex_<lineup_.size()){
                     std::cout<<" "<<name_<<" (Stage): Schedule change - now is up\""<<lineup_[currentActIndex_]<<"\".\n";
                     ++currentActIndex_;
